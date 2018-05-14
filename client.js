@@ -1,15 +1,3 @@
-# ad-crud-service
-
-This guide was wriiten assuming that you are already familiar with Active Directory, how nodejs works, (if you havent you should go do it right now) and you need to create a microservice that create/read/update/delete enitities in your Active direcotry using the ldap protocol and ldapjs library.
-For more advanced solution I will add support for Promises using Bluebird and Seneca for creating our service.
-
-## Ldapjs Getting started
-The first thing that we need to do is to create our ldap client. In our initial version we will use a simple json configuration. After that we will use the dot-env library to securely access our environment variables.
-
-
-### Create ldapjs client
-
-```javascript
 const ldap = require('ldapjs');
 
 /**
@@ -83,18 +71,3 @@ class LDAPClient{
 }
 
 module.exports = LDAPClient;
-
-```
-
-### Configure application
-```javascript
-exports.config = {
-    ldapServerUrl: '',
-    ldapUser: '',
-    ldapPassword: "",
-    adSearchAttributeName: 'sAMAccountName',
-    usersContainerDn: 'DC=corp,DC=local',
-    baseSecurityGroupDn: '',
-};
-
-```
