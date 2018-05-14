@@ -1,0 +1,30 @@
+{
+  "name": "ad-crud-service",
+  "version": "1.0.0",
+  "description": "Microservice for CRUD operations for Active Directory using ES6 ldapjs, senecajs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vgudzhev/ad-crud-service.git"
+  },
+  "keywords": [
+    "ES6",
+    "Ldapjs",
+    "Active-directory",
+    "nodejs",
+    "senecajs",
+    "crud"
+  ],
+  "author": "Vasil Gudzhev <vgudzhev@gmail.com> (https://vgudzhev.github.io/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vgudzhev/ad-crud-service/issues"
+  },
+  "homepage": "https://github.com/vgudzhev/ad-crud-service#readme",
+  "dependencies": {
+    "ldapjs": "^1.0.2"
+  }
+}
